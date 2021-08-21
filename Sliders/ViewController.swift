@@ -46,9 +46,12 @@ class ViewController: UIViewController {
     }
     
     func updateTextSliderLabel() {
-        redValueLabel.text = String(redSlider.value)
-        greenValueLabel.text = String(greenSlider.value)
-        blueValueLabel.text = String(blueSlider.value)
+//        redValueLabel.text = String(redSlider.value)
+        redValueLabel.text = String(format: "%.3f", redSlider.value)
+//        greenValueLabel.text = String(greenSlider.value)
+        greenValueLabel.text = String(format: "%.3f", greenSlider.value)
+//        blueValueLabel.text = String(blueSlider.value)
+        blueValueLabel.text = String(format: "%.3f", blueSlider.value)
     }
 }
 
